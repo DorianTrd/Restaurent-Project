@@ -1,5 +1,5 @@
-// authController.js
-const { Utilisateur } = require('../models/Utilisateur');
+// controllers/authController.js
+const { Utilisateur } = require('../models/Utilisateur'); // Assurez-vous de l'import correct
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
@@ -7,18 +7,29 @@ const jwt = require('jsonwebtoken');
 const signup = async (req, res) => {
     try {
         const { email, motDePasse, nom, role } = req.body;
+        console.log("Data received:", req.body);  // Affichage des données reçues
+
         const hashedPassword = await bcrypt.hash(motDePasse, 10);
+
+        // Vérifiez que l'objet Utilisateur est correctement défini
+        console.log("Utilisateur model:", Utilisateur);
+
+        if (!Utilisateur) {
+            return res.status(500).send({ error: "Utilisateur model is undefined" });
+        }
 
         const utilisateur = await Utilisateur.create({
             email,
             motDePasse: hashedPassword,
             nom,
-            role: role || 'utilisateur'
+            role: role || 'utilisateur',
         });
+
+        console.log("Utilisateur créé:", utilisateur);
 
         return res.status(201).send({ message: 'Utilisateur créé avec succès', utilisateur });
     } catch (error) {
-        console.error('Erreur lors de l\'inscription:', error);
+        console.error('Erreur lors de l\'inscription:', error);  // Capture complète de l'erreur
         return res.status(500).send({ error: 'Erreur lors de l\'inscription', details: error.message });
     }
 };
