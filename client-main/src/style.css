@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.restaurant-card, .cart-item {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 8px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #5753d6;
+    }
