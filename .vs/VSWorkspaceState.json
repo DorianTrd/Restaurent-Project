@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\client-admin",
+    "\\client-main",
+    "\\server",
+    "\\server\\config",
+    "\\server\\controllers",
+    "\\server\\middleware",
+    "\\server\\models",
+    "\\server\\routes",
+    "\\server\\validators"
+  ],
+  "SelectedNode": "\\client-main\\.gitignore",
+  "PreviewInSolutionExplorer": false
+}
