@@ -71,5 +71,4 @@ const deletePlat = async (req, res) => {
         res.status(500).send({ error: 'Erreur lors de la suppression du plat' });
     }
 };
-
 module.exports = { createPlat, getPlats, getPlatById, updatePlat, deletePlat };

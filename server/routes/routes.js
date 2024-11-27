@@ -1,38 +1,76 @@
+// routes/routes.js
 const express = require('express');
 const router = express.Router();
+
+
+
+
+// Importation correcte des contrôleurs
 const utilisateurController = require('../controllers/utilisateurController');
-const restaurantController = require('../controllers/restaurantController');
 const platController = require('../controllers/platController');
+const restaurantController = require('../controllers/restaurantController');
 const commandeController = require('../controllers/commandeController');
+const panierController = require('../controllers/panierController');
+const { body } = require('express-validator');
+const authController = require('../controllers/authController')
+const validateMiddleware = require('../middleware/validateMiddleware');
 const authMiddleware = require('../middleware/authMiddleware');
-const roleMiddleware = require('../middleware/roleMiddleware');
 
+router.post(
+    '/register',
+    [
+        // Validation des champs d'inscription
+        body('email').isEmail().withMessage('Email invalide').normalizeEmail(),
+        body('motDePasse').isLength({ min: 6 }).withMessage('Le mot de passe doit contenir au moins 6 caractères'),
+        body('nom').notEmpty().withMessage('Le nom est obligatoire')
+    ],
+    validateMiddleware, // Applique le middleware de validation
+    authController.signup // Appelle la méthode signup du contrôleur
+);
 
-// Routes Utilisateur
-router.post('/utilisateur', utilisateurController.createUtilisateur);
-router.get('/utilisateur', authMiddleware, utilisateurController.getUtilisateur);
-router.put('/utilisateur', authMiddleware, utilisateurController.updateUtilisateur);
-router.delete('/utilisateur', authMiddleware, utilisateurController.deleteUtilisateur);
+// Route pour la connexion (login)
+router.post(
+    '/login',
+    [
+        // Validation des champs de connexion
+        body('email').isEmail().withMessage('Email invalide').normalizeEmail(),
+        body('motDePasse').isLength({ min: 6 }).withMessage('Le mot de passe doit contenir au moins 6 caractères')
+    ],
+    validateMiddleware, // Applique le middleware de validation
+    authController.login // Appelle la méthode login du contrôleur
+);
 
-// Routes Restaurant (admin seulement)
-router.post('/restaurants', authMiddleware, roleMiddleware(['admin']), restaurantController.createRestaurant);
-router.get('/restaurants', restaurantController.getRestaurants);
-router.get('/restaurants/:id', restaurantController.getRestaurantById);
-router.put('/restaurants/:id', authMiddleware, roleMiddleware(['admin']), restaurantController.updateRestaurant);
-router.delete('/restaurants/:id', authMiddleware, roleMiddleware(['admin']), restaurantController.deleteRestaurant);
+// Routes pour les utilisateurs
+router.post('/utilisateurs', utilisateurController.createUtilisateur); 
+router.get('/utilisateur', [
+    authMiddleware
+],utilisateurController.getUtilisateur);
+router.put('/utilisateur', utilisateurController.updateUtilisateur);
+router.delete('/utilisateur', utilisateurController.deleteUtilisateur);
 
-// Routes Plat (admin seulement)
-router.post('/plats', authMiddleware, roleMiddleware(['admin']), platController.createPlat);
+// Routes pour les plats
+router.post('/plats', platController.createPlat);
 router.get('/plats', platController.getPlats);
-router.get('/plats/:id', platController.getPlatById);
-router.put('/plats/:id', authMiddleware, roleMiddleware(['admin']), platController.updatePlat);
-router.delete('/plats/:id', authMiddleware, roleMiddleware(['admin']), platController.deletePlat);
+router.get('/plat/:id', platController.getPlatById);
+router.put('/plat/:id', platController.updatePlat);
+router.delete('/plat/:id', platController.deletePlat);
 
-// Routes Commande (utilisateur authentifié)
-router.post('/commandes', authMiddleware, commandeController.createCommande);
-router.get('/commandes', authMiddleware, commandeController.getCommandes);
-router.get('/commandes/:id', authMiddleware, commandeController.getCommandeById);
-router.put('/commandes/:id', authMiddleware, commandeController.updateCommande);
-router.delete('/commandes/:id', authMiddleware, commandeController.deleteCommande);
+// Routes pour les restaurants
+router.post('/restaurants', restaurantController.createRestaurant);
+router.get('/restaurants', restaurantController.getRestaurants);
+router.get('/restaurant/:id', restaurantController.getRestaurantById);
+router.put('/restaurant/:id', restaurantController.updateRestaurant);
+router.delete('/restaurant/:id', restaurantController.deleteRestaurant);
+
+// Routes pour les commandes
+router.post('/commandes', commandeController.createCommande);
+router.get('/commandes', commandeController.getCommandes);
+router.get('/commande/:id', commandeController.getCommandeById);
+router.put('/commande/:id', commandeController.updateCommande);
+router.delete('/commande/:id', commandeController.deleteCommande);
+
+// Routes pour le panier
+router.post('/panier', panierController.addToPanier);
+router.get('/panier/:utilisateurId', panierController.getPanier);
 
 module.exports = router;

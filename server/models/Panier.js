@@ -1,32 +1,30 @@
-const { Sequelize, DataTypes } = require('sequelize');
+const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
 const Panier = sequelize.define('Panier', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
-        autoIncrement: true,
+        autoIncrement: true
     },
-    quantite: {
+    utilisateurId: {
         type: DataTypes.INTEGER,
-        defaultValue: 1,
+        allowNull: false,
+        references: {
+            model: 'Utilisateurs',
+            key: 'id'
+        }
     },
+    platId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'Plats',
+            key: 'id'
+        }
+    }
 }, {
-    timestamps: true,  // Ajoute createdAt et updatedAt automatiquement
+    timestamps: true,
 });
-
-// Association avec l'utilisateur (un panier appartient à un utilisateur)
-Panier.associate = (models) => {
-    Panier.belongsTo(models.Utilisateur, {
-        foreignKey: 'utilisateurId',
-        onDelete: 'CASCADE',
-    });
-
-    // Association avec les plats (un panier contient plusieurs plats)
-    Panier.belongsTo(models.Plat, {
-        foreignKey: 'platId',
-        onDelete: 'CASCADE',
-    });
-};
 
 module.exports = Panier;

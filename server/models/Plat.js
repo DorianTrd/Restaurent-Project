@@ -1,32 +1,33 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
-const Restaurant = require('./Restaurant'); // Importation du modèle Restaurant
 
 const Plat = sequelize.define('Plat', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
-        autoIncrement: true,
+        autoIncrement: true
     },
     nom: {
         type: DataTypes.STRING,
-        allowNull: false,
-    },
-    description: {
-        type: DataTypes.TEXT,
-        allowNull: true,
+        allowNull: false
     },
     prix: {
-        type: DataTypes.FLOAT,
-        allowNull: false,
+        type: DataTypes.DECIMAL(10, 2),
+        allowNull: false
     },
+    description: {
+        type: DataTypes.STRING,
+    },
+    restaurantId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'Restaurants', // Table Restaurant
+            key: 'id'
+        }
+    }
 }, {
     timestamps: true,
-});
-
-Plat.belongsTo(Restaurant, {
-    foreignKey: 'restaurantId',
-    onDelete: 'CASCADE',
 });
 
 module.exports = Plat;

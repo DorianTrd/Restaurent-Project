@@ -1,78 +1,49 @@
-const Utilisateur = require('../models/Utilisateur'); // Importer le modèle Utilisateur
+// authController.js
+const { Utilisateur } = require('../models/Utilisateur');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-// Fonction pour enregistrer un utilisateur
-exports.register = async (req, res) => {
-    const { nom, email, motDePasse, role } = req.body; // Inclure le rôle lors de l'inscription
-
+// Inscription
+const signup = async (req, res) => {
     try {
-        // Vérifiez si l'utilisateur existe déjà
-        const utilisateurExist = await Utilisateur.findOne({ where: { email } });
-        if (utilisateurExist) {
-            return res.status(400).json({ message: 'L\'utilisateur existe déjà' });
-        }
-
-        // Hachage du mot de passe
+        const { email, motDePasse, nom, role } = req.body;
         const hashedPassword = await bcrypt.hash(motDePasse, 10);
 
-        // Créez un nouvel utilisateur avec le rôle fourni ou par défaut "utilisateur"
         const utilisateur = await Utilisateur.create({
-            nom,
             email,
             motDePasse: hashedPassword,
-            role: role || 'utilisateur', // Rôle par défaut : utilisateur
+            nom,
+            role: role || 'utilisateur'
         });
 
-        // Générez un token pour l'utilisateur
-        const token = jwt.sign(
-            { id: utilisateur.id, role: utilisateur.role }, // Inclure le rôle dans le payload du token
-            process.env.JWT_SECRET, // Utilisez une clé secrète sécurisée depuis les variables d'environnement
-            { expiresIn: '1h' }
-        );
-
-        res.status(201).json({
-            message: 'Utilisateur créé avec succès',
-            utilisateur,
-            token,
-        });
+        return res.status(201).send({ message: 'Utilisateur créé avec succès', utilisateur });
     } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Erreur lors de l\'enregistrement de l\'utilisateur' });
+        console.error('Erreur lors de l\'inscription:', error);
+        return res.status(500).send({ error: 'Erreur lors de l\'inscription', details: error.message });
     }
 };
 
-// Fonction pour connecter un utilisateur
-exports.login = async (req, res) => {
-    const { email, motDePasse } = req.body;
-
+// Connexion
+const login = async (req, res) => {
     try {
-        // Trouvez l'utilisateur par email
+        const { email, motDePasse } = req.body;
         const utilisateur = await Utilisateur.findOne({ where: { email } });
+
         if (!utilisateur) {
-            return res.status(404).json({ message: 'Utilisateur non trouvé' });
+            return res.status(404).send({ message: 'Utilisateur non trouvé' });
         }
 
-        // Vérifiez le mot de passe
-        const isMatch = await bcrypt.compare(motDePasse, utilisateur.motDePasse);
-        if (!isMatch) {
-            return res.status(400).json({ message: 'Mot de passe incorrect' });
+        const match = await bcrypt.compare(motDePasse, utilisateur.motDePasse);
+        if (!match) {
+            return res.status(400).send({ message: 'Mot de passe incorrect' });
         }
 
-        // Générez un token pour l'utilisateur
-        const token = jwt.sign(
-            { id: utilisateur.id, role: utilisateur.role }, // Inclure le rôle dans le payload du token
-            process.env.JWT_SECRET, // Utilisez une clé secrète sécurisée depuis les variables d'environnement
-            { expiresIn: '1h' }
-        );
-
-        res.status(200).json({
-            message: 'Connexion réussie',
-            utilisateur,
-            token,
-        });
+        const token = jwt.sign({ id: utilisateur.id }, 'SECRET_KEY', { expiresIn: '1h' });
+        return res.status(200).send({ message: 'Connexion réussie', token });
     } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Erreur lors de la connexion' });
+        console.error('Erreur lors de la connexion:', error);
+        return res.status(500).send({ error: 'Erreur lors de la connexion', details: error.message });
     }
 };
+
+module.exports = { signup, login };

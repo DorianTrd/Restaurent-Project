@@ -1,34 +1,24 @@
-// Importations nécessaires
+// server.js
 const express = require('express');
-const cors = require('cors');
-const dotenv = require('dotenv');
-const sequelize = require('./config/database'); // Assurez-vous que ce chemin est correct
-const routes = require('./routes/routes'); // Assurez-vous que ce chemin est correct
+const bodyParser = require('body-parser');
+const sequelize = require('./config/database');  // Connexion à la base de données
+const routes = require('./routes/routes');      // Routes principales
 
-// Initialisation de l'application Express
 const app = express();
 
-// Chargement des variables d'environnement depuis un fichier .env
-dotenv.config();
+// Middleware pour analyser les requêtes JSON
+app.use(bodyParser.json());
 
-// Middleware
-app.use(express.json()); // Pour parser les requêtes en JSON
-app.use(cors()); // Pour autoriser les requêtes cross-origin
+// Intégration des routes
+app.use('/api', routes);
 
-// Routes
-app.use('/api', routes); // Lien vers les routes définies dans routes.js
-
-// Synchronisation avec la base de données
-sequelize.sync({ force: false })
+// Synchronisation des modèles avec la base de données
+sequelize.sync()
     .then(() => {
-        console.log('La base de données a été synchronisée avec succès.');
+        app.listen(5000, () => {
+            console.log('Server running on http://localhost:5000');
+        });
     })
-    .catch((error) => {
-        console.error('Erreur lors de la synchronisation de la base de données:', error);
+    .catch((err) => {
+        console.error('Error syncing the database', err);
     });
-
-// Démarrage du serveur
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-    console.log(`Le serveur tourne sur le port ${PORT}`);
-});

@@ -1,40 +1,38 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database'); // Assure-toi que la connexion est correcte
+const sequelize = require('../config/database');
 
 const Restaurant = sequelize.define('Restaurant', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
-        autoIncrement: true,
+        autoIncrement: true
     },
     nom: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: false
     },
     adresse: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: false
     },
     codePostal: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: false
     },
     ville: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: false
     },
     email: {
         type: DataTypes.STRING,
-        allowNull: false,
-        unique: true,
+        allowNull: false
     },
     motDePasse: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: false
     },
 }, {
-    timestamps: true,  // Ajoute createdAt et updatedAt automatiquement
+    timestamps: true,
 });
 
-// Exporter le modèle Restaurant
 module.exports = Restaurant;
