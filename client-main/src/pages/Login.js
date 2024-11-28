@@ -1,47 +1,23 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux"; // Pour mettre à jour le state global
+import { login } from "../store/features/auth/authActions"; // Action Redux
 
 const Login = () => {
     const [email, setEmail] = useState("");
     const [motDePasse, setMotDePasse] = useState("");
     const [error, setError] = useState(null);
     const navigate = useNavigate();
+    const dispatch = useDispatch();
 
     const handleLogin = async (e) => {
         e.preventDefault();
-
-        const data = { email, motDePasse };
-
         try {
-            const response = await fetch("http://localhost:5000/api/login", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(data),
-            });
-
-            const result = await response.json();
-
-            if (response.ok) {
-                // Sauvegarde le token et le rôle dans localStorage
-                localStorage.setItem("token", result.token);
-                localStorage.setItem("role", result.role); // Sauvegarde du rôle dans localStorage
-
-                // Rediriger vers le bon tableau de bord en fonction du rôle
-                if (result.role === "admin") {
-                    navigate("/admin/dashboard");
-                } else if (result.role === "restaurateur") {
-                    navigate("/restaurant/dashboard");
-                } else if (result.role === "utilisateur") {
-                    navigate("/utilisateur/dashboard");
-                }
-            } else {
-                setError(result.message || "Erreur de connexion");
-            }
+            await dispatch(login({ email, password: motDePasse })); // Utilise l'action Redux
+            navigate('/dashboard'); // Redirige vers le tableau de bord
         } catch (err) {
-            setError("Une erreur s'est produite, veuillez réessayer plus tard.");
-            console.error("Erreur de connexion:", err);
+            setError("Erreur lors de la connexion.");
+            console.error(err);
         }
     };
 
@@ -70,7 +46,17 @@ const Login = () => {
                         style={{ width: "100%", padding: 8, marginTop: 5 }}
                     />
                 </div>
-                <button type="submit" style={{ width: "100%", padding: 10, backgroundColor: "#007BFF", color: "#fff", border: "none", borderRadius: 5 }}>
+                <button
+                    type="submit"
+                    style={{
+                        width: "100%",
+                        padding: 10,
+                        backgroundColor: "#007bff",
+                        color: "#fff",
+                        border: "none",
+                        borderRadius: 5,
+                    }}
+                >
                     Se connecter
                 </button>
             </form>

@@ -1,14 +1,16 @@
-// index.js
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App'; // Ton composant principal
-import { BrowserRouter } from 'react-router-dom';
+import React, { StrictMode } from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux"; // Import du Provider
+import store from "./store"; // Import du store
+import App from "./App";
 
+
+// Rendu de l'application
 ReactDOM.render(
-    <React.StrictMode>
-        <BrowserRouter> {/* Le Router englobe l'application entière */}
+    <StrictMode>
+        <Provider store={store}> {/* Le Provider permet d'accéder au store */}
             <App />
-        </BrowserRouter>
-    </React.StrictMode>,
-    document.getElementById('root')
+        </Provider>
+    </StrictMode>,
+    document.getElementById("root")
 );
