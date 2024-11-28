@@ -1,37 +1,35 @@
+
 import { loginSuccess, getUserSuccess, registerSuccess } from "../../authSlice";
-import axios from "../../../api/AxiosInstance";
+import store from "../../index";
+import authService from "../../../api/AuthService";
 
 export const login =
-    ({ email, password }) =>
+    ({ email, motDePasse }) =>
         async (dispatch) => {
             try {
-                const { data } = await axios.post("/login", { email, motDePasse: password }); // Utilise ta propre route pour le login
-                const { accessToken } = data;
-                dispatch(loginSuccess({ accessToken }));
-                dispatch(getUser()); // Récupérer les informations de l'utilisateur
-            } catch (error) {
-                console.error("Login error:", error);
-            }
+                const { data } = await authService.login({
+                    email, motDePasse
+                });
+                await dispatch(loginSuccess({ accessToken : data.token }));
+                store.dispatch(getUser());
+            } catch (error) { }
         };
 
 export const getUser = () => async (dispatch) => {
     try {
-        const { data } = await axios.get("/me");  // Récupérer les données utilisateur
-        dispatch(getUserSuccess({ user: data }));
-    } catch (error) {
-        console.error("Get user error:", error);
-    }
+        const {data} = await authService.getUser();
+        dispatch(getUserSuccess({ user : data }));
+    } catch (error) { }
 };
 
 export const register =
-    ({ email, password, nom }) =>
+    ({ email, password, name }) =>
         async (dispatch) => {
             try {
-                const { data } = await axios.post("/register", { email, motDePasse: password, nom });
-                const { accessToken } = data;
-                dispatch(registerSuccess({ accessToken }));
-                dispatch(getUser());
-            } catch (error) {
-                console.error("Register error:", error);
-            }
-        };
+                const {data } = await authService.register({
+                    email, motDePasse: password, nom: name
+                });
+                await dispatch(registerSuccess({ accessToken  : data.token}));
+                store.dispatch(getUser());
+            } catch (error) { }
+        }

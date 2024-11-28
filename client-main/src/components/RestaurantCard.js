@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function RestaurantCard({ restaurant }) {
+const RestaurantCard = ({ restaurant }) => {
     return (
         <div className="restaurant-card">
-            <h2>{restaurant.name}</h2>
-            <img src={restaurant.image} alt={restaurant.name} />
-            <Link to={`/restaurant/${restaurant.id}`}>Voir les détails</Link>
+            <Link to={`/dashboard/restaurants/${restaurant.id}/plates`}>
+                <img src={restaurant.image} alt={restaurant.name} />
+                <h3>{restaurant.name}</h3>
+            </Link>
         </div>
     );
-}
+};
 
 export default RestaurantCard;

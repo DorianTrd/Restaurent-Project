@@ -1,38 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import ApiService from '../api/ApiService';
+import React, { useState } from 'react';
 
-function Profile() {
-    const [profile, setProfile] = useState({
-        name: '',
-        email: '',
-    });
+const ProfilePage = () => {
+    const [user, setUser] = useState({ name: '', email: '' });
 
-    useEffect(() => {
-        ApiService.getProfile().then(setProfile);
-    }, []);
-
-    const handleChange = (e) => {
-        setProfile({ ...profile, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            await ApiService.updateProfile(profile);
-            alert('Profil mis à jour avec succès!');
-        } catch (err) {
-            alert('Erreur: ' + err.message);
-        }
+    const handleSubmit = () => {
+        // API call pour mettre à jour les informations de l'utilisateur
+        console.log('Informations mises à jour :', user);
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <div>
             <h1>Mon Profil</h1>
-            <input type="text" name="name" value={profile.name} onChange={handleChange} />
-            <input type="email" name="email" value={profile.email} onChange={handleChange} />
-            <button type="submit">Mettre à jour</button>
-        </form>
+            <input
+                type="text"
+                value={user.name}
+                onChange={(e) => setUser({ ...user, name: e.target.value })}
+                placeholder="Nom"
+            />
+            <input
+                type="email"
+                value={user.email}
+                onChange={(e) => setUser({ ...user, email: e.target.value })}
+                placeholder="Email"
+            />
+            <button onClick={handleSubmit}>Mettre à jour</button>
+        </div>
     );
-}
+};
 
-export default Profile;
+export default ProfilePage;

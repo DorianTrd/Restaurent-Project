@@ -1,12 +1,23 @@
-import React from "react";
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { logout } from '../store/authSlice';
+import { useNavigate } from 'react-router-dom';
 
 const RestaurantDashboard = () => {
-  return (
-    <div>
-      <h1>Interface Restaurateur</h1>
-      <p>Gérer votre restaurant et vos plats ici.</p>
-    </div>
-  );
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        dispatch(logout());
+        navigate('/login'); // Redirige vers la page de connexion après la déconnexion
+    };
+
+    return (
+        <div>
+            <h1>Restaurant Dashboard</h1>
+            <button onClick={handleLogout}>Se déconnecter</button>
+        </div>
+    );
 };
 
 export default RestaurantDashboard;

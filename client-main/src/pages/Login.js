@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux"; // Pour mettre à jour le state global
-import { login } from "../store/features/auth/authActions"; // Action Redux
+import { useDispatch } from "react-redux";
+import { loginSuccess } from "../store/authSlice"; // Assurez-vous d'importer l'action correctement
+import AuthService from "../api/AuthService";
+import { login } from "../store/features/auth/authActions";
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -12,13 +14,9 @@ const Login = () => {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        try {
-            await dispatch(login({ email, password: motDePasse })); // Utilise l'action Redux
-            navigate('/dashboard'); // Redirige vers le tableau de bord
-        } catch (err) {
-            setError("Erreur lors de la connexion.");
-            console.error(err);
-        }
+        const data = { email, motDePasse };
+        dispatch(login(data))
+        
     };
 
     return (
@@ -34,6 +32,7 @@ const Login = () => {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         style={{ width: "100%", padding: 8, marginTop: 5 }}
+                        required
                     />
                 </div>
                 <div style={{ marginBottom: 10 }}>
@@ -44,6 +43,7 @@ const Login = () => {
                         value={motDePasse}
                         onChange={(e) => setMotDePasse(e.target.value)}
                         style={{ width: "100%", padding: 8, marginTop: 5 }}
+                        required
                     />
                 </div>
                 <button
@@ -61,7 +61,13 @@ const Login = () => {
                 </button>
             </form>
             <p style={{ marginTop: 20 }}>
-                Pas encore de compte ? <a href="/register">S'inscrire</a>
+                Pas encore de compte ?{" "}
+                <button
+                    onClick={() => navigate("/register")}  // Utilisation de navigate pour la redirection
+                    style={{ color: "#007bff", border: "none", background: "none", cursor: "pointer" }}
+                >
+                    S'inscrire
+                </button>
             </p>
         </div>
     );

@@ -4,7 +4,7 @@ import { logout } from '../store/authSlice';
 
 // Crée une instance d'axios avec une URL de base
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:5000', // Remplace par l'URL de ton API
+    baseURL: 'http://localhost:5000/api', // Remplace par l'URL de ton API
 });
 
 // Ajouter le token dans les headers de la requête sans utiliser "Bearer"

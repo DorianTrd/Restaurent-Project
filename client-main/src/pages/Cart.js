@@ -1,9 +1,11 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
-import { CartContext } from '../store/cartSlice';
+import React, { useState } from 'react';
 
-function Cart() {
-    const { cart, removeFromCart, calculateTotal } = useContext(CartContext);
+const CartPage = () => {
+    const [cart, setCart] = useState([]);  // Vous pouvez utiliser Redux ou un store pour gérer cela
+
+    const calculateTotal = () => {
+        return cart.reduce((total, item) => total + item.price, 0);
+    };
 
     return (
         <div>
@@ -11,20 +13,18 @@ function Cart() {
             {cart.length === 0 ? (
                 <p>Votre panier est vide.</p>
             ) : (
-                <div>
-                    {cart.map((item, index) => (
-                        <div key={index} className="cart-item">
-                            <h3>{item.name}</h3>
-                            <p>Prix: {item.price} €</p>
-                            <button onClick={() => removeFromCart(index)}>Retirer</button>
-                        </div>
-                    ))}
-                    <h2>Total: {calculateTotal()} €</h2>
-                    <button>Valider la commande</button>
-                </div>
+                cart.map((item, index) => (
+                    <div key={index} className="cart-item">
+                        <img src={item.image} alt={item.name} />
+                        <span>{item.name}</span>
+                        <span>{item.price}€</span>
+                    </div>
+                ))
             )}
+            <h2>Total : {calculateTotal()}€</h2>
+            <button>Payer</button>
         </div>
     );
-}
+};
 
-export default Cart;
+export default CartPage;

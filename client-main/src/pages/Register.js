@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ApiService from "../api/ApiService";
+import { register } from "../store/features/auth/authActions";
+import { useDispatch } from "react-redux";
 
 const Register = () => {
     const [email, setEmail] = useState("");
@@ -7,32 +10,14 @@ const Register = () => {
     const [nom, setNom] = useState("");
     const [error, setError] = useState(null);
     const navigate = useNavigate();
+    const dispatch = useDispatch()
 
     const handleRegister = async (e) => {
         e.preventDefault();
-        const data = { email, motDePasse, nom, role: "utilisateur" }; // Le rôle est fixé à "utilisateur"
+        const data = { email, motDePasse, nom}; // Le rôle est fixé à "utilisateur"
 
-        try {
-            const response = await fetch("http://localhost:5000/api/register", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(data),
-            });
 
-            const result = await response.json();
-
-            if (response.ok) {
-                // Redirige vers la page de login après l'inscription
-                navigate("/login");
-            } else {
-                setError(result.message || "Erreur lors de l'inscription");
-            }
-        } catch (err) {
-            setError("Une erreur s'est produite, veuillez réessayer plus tard.");
-            console.error("Erreur d'inscription:", err);
-        }
+        dispatch(register({ email, password: motDePasse,name : nom }));
     };
 
     return (
