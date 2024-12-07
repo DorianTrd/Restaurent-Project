@@ -1,75 +1,53 @@
 import AxiosInstance from './AxiosInstance';
 
 const ApiService = {
-    // Authentification
-   
-    // Utilisateur
-    getUser: () =>
-        AxiosInstance.get('/user').then((res) => res.data), // Récupérer les infos de l'utilisateur connecté
-
-    updateUser: (data) =>
-        AxiosInstance.put('/user', data).then((res) => res.data), // Mettre à jour les infos utilisateur
-
-    getUsers: () =>
-        AxiosInstance.get('/users').then((res) => res.data), // Récupérer tous les utilisateurs (admin seulement)
-
-    deleteUser: () =>
-        AxiosInstance.delete('/user').then((res) => res.data), // Supprimer un utilisateur
-
     // Restaurants
     getRestaurants: () =>
-        AxiosInstance.get('/restaurants').then((res) => res.data),
+        AxiosInstance.get('/restaurants').then((res) => res.data), // Récupérer tous les restaurants
 
     getRestaurantById: (id) =>
-        AxiosInstance.get(`/restaurant/${id}`).then((res) => res.data),
+        AxiosInstance.get(`/restaurant/${id}`).then((res) => res.data), // Récupérer un restaurant par ID
 
     createRestaurant: (data) =>
-        AxiosInstance.post('/restaurants', data).then((res) => res.data),
+        AxiosInstance.post('/restaurants', data).then((res) => res.data), // Créer un restaurant
 
     updateRestaurant: (id, data) =>
-        AxiosInstance.put(`/restaurant/${id}`, data).then((res) => res.data),
+        AxiosInstance.put(`/restaurant/${id}`, data).then((res) => res.data), // Mettre à jour un restaurant
 
     deleteRestaurant: (id) =>
-        AxiosInstance.delete(`/restaurant/${id}`).then((res) => res.data),
+        AxiosInstance.delete(`/restaurant/${id}`).then((res) => res.data), // Supprimer un restaurant
 
     // Plats
-    getPlats: () =>
-        AxiosInstance.get('/dishes').then((res) => res.data),
+    getPlatsByRestaurant: (restaurantId) =>
+        AxiosInstance.get(`/restaurant/${restaurantId}/dish`).then((res) => res.data), // Récupérer tous les plats d'un restaurant
 
-    getPlatById: (id) =>
-        AxiosInstance.get(`/dish/${id}`).then((res) => res.data),
+    getPlatById: (restaurantId, dishId) =>
+        AxiosInstance.get(`/restaurant/${restaurantId}/dish/${dishId}`).then((res) => res.data), // Récupérer un plat spécifique d'un restaurant
 
-    createPlat: (data) =>
-        AxiosInstance.post('/dishes', data).then((res) => res.data),
+    createPlat: (restaurantId, data) =>
+        AxiosInstance.post(`/restaurant/${restaurantId}/dish`, data).then((res) => res.data), // Créer un plat pour un restaurant
 
-    updatePlat: (id, data) =>
-        AxiosInstance.put(`/dish/${id}`, data).then((res) => res.data),
+    updatePlat: (restaurantId, dishId, data) =>
+        AxiosInstance.put(`/restaurant/${restaurantId}/dish/${dishId}`, data).then((res) => res.data), // Mettre à jour un plat spécifique d'un restaurant
 
-    deletePlat: (id) =>
-        AxiosInstance.delete(`/dish/${id}`).then((res) => res.data),
+    deletePlat: (restaurantId, dishId) =>
+        AxiosInstance.delete(`/restaurant/${restaurantId}/dish/${dishId}`).then((res) => res.data), // Supprimer un plat spécifique d'un restaurant
 
     // Commandes
     getCommandes: () =>
-        AxiosInstance.get('/orders').then((res) => res.data),
+        AxiosInstance.get('/orders').then((res) => res.data), // Récupérer toutes les commandes
 
     getCommandeById: (id) =>
-        AxiosInstance.get(`/order/${id}`).then((res) => res.data),
+        AxiosInstance.get(`/order/${id}`).then((res) => res.data), // Récupérer une commande par ID
 
     createCommande: (data) =>
-        AxiosInstance.post('/orders', data).then((res) => res.data),
+        AxiosInstance.post('/orders', data).then((res) => res.data), // Créer une commande
 
     updateCommande: (id, data) =>
-        AxiosInstance.put(`/order/${id}`, data).then((res) => res.data),
+        AxiosInstance.put(`/order/${id}`, data).then((res) => res.data), // Mettre à jour une commande
 
     deleteCommande: (id) =>
-        AxiosInstance.delete(`/order/${id}`).then((res) => res.data),
-
-    // Panier
-    addToCart: (data) =>
-        AxiosInstance.post('/cart', data).then((res) => res.data),
-
-    getCart: (userId) =>
-        AxiosInstance.get(`/cart/${userId}`).then((res) => res.data),
+        AxiosInstance.delete(`/order/${id}`).then((res) => res.data), // Supprimer une commande
 };
 
 export default ApiService;

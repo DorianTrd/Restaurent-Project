@@ -1,16 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\client-admin",
     "\\client-main",
-    "\\server",
-    "\\server\\config",
-    "\\server\\controllers",
-    "\\server\\middleware",
-    "\\server\\models",
-    "\\server\\routes",
-    "\\server\\validators"
+    "\\client-main\\public",
+    "\\client-main\\src",
+    "\\client-main\\src\\api",
+    "\\client-main\\src\\components",
+    "\\client-main\\src\\context",
+    "\\client-main\\src\\pages",
+    "\\server"
   ],
-  "SelectedNode": "\\client-main\\.gitignore",
+  "SelectedNode": "\\server\\server.js",
   "PreviewInSolutionExplorer": false
 }

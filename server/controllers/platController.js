@@ -1,74 +1,95 @@
 const Plat = require('../models/Plat');
 
-// Créer un plat
-const createPlat = async (req, res) => {
-    try {
-        const { nom, description, prix, restaurantId } = req.body;
+// Créer un plat pour un restaurant
+exports.createPlat = async (req, res) => {
+    const { restaurantId } = req.params; // ID du restaurant dans l'URL
+    const { nom, prix, description, imageUrl } = req.body;
 
-        const plat = await Plat.create({ nom, description, prix, restaurantId });
-        res.status(201).send({ message: 'Plat créé avec succès', plat });
+    try {
+        const newPlat = await Plat.create({
+            nom,
+            prix,
+            description,
+            imageUrl,
+            restaurantId
+        });
+
+        res.status(201).json({ message: 'Plat créé avec succès', plat: newPlat });
     } catch (error) {
-        res.status(500).send({ error: 'Erreur lors de la création du plat' });
+        res.status(500).json({ message: 'Erreur lors de la création du plat', error });
     }
 };
 
-// Récupérer tous les plats
-const getPlats = async (req, res) => {
+// Récupérer tous les plats d'un restaurant
+exports.getPlatsByRestaurant = async (req, res) => {
+    const { restaurantId } = req.params;
+
     try {
-        const plats = await Plat.findAll();
-        res.status(200).send(plats);
+        const plats = await Plat.findAll({ where: { restaurantId } });
+        res.json(plats);
     } catch (error) {
-        res.status(500).send({ error: 'Erreur lors de la récupération des plats' });
+        res.status(500).json({ message: 'Erreur lors de la récupération des plats', error });
     }
 };
 
-// Récupérer un plat par ID
-const getPlatById = async (req, res) => {
+// Récupérer les détails d'un plat par ID pour un restaurant
+exports.getPlatDetails = async (req, res) => {
+    const { restaurantId, platId } = req.params;
+
     try {
-        const plat = await Plat.findByPk(req.params.id);
+        const plat = await Plat.findOne({
+            where: { id: platId, restaurantId },
+        });
+
         if (!plat) {
-            return res.status(404).send({ message: 'Plat non trouvé' });
+            return res.status(404).json({ message: 'Plat non trouvé' });
         }
-        res.status(200).send(plat);
+
+        res.json(plat);  // Retourne les détails du plat
     } catch (error) {
-        res.status(500).send({ error: 'Erreur lors de la récupération du plat' });
+        res.status(500).json({ message: 'Erreur lors de la récupération des détails du plat', error });
     }
 };
 
-// Mettre à jour un plat
-const updatePlat = async (req, res) => {
-    try {
-        const { nom, description, prix, restaurantId } = req.body;
-        const plat = await Plat.findByPk(req.params.id);
+// Mettre à jour un plat pour un restaurant
+exports.updatePlat = async (req, res) => {
+    const { platId } = req.params;
+    const { nom, prix, description, imageUrl } = req.body;
 
+    try {
+        const plat = await Plat.findByPk(platId);
         if (!plat) {
-            return res.status(404).send({ message: 'Plat non trouvé' });
+            return res.status(404).json({ message: 'Plat non trouvé' });
         }
 
+        // Mise à jour des données
         plat.nom = nom || plat.nom;
-        plat.description = description || plat.description;
         plat.prix = prix || plat.prix;
-        plat.restaurantId = restaurantId || plat.restaurantId;
+        plat.description = description || plat.description;
+        plat.imageUrl = imageUrl || plat.imageUrl;
 
         await plat.save();
-        res.status(200).send({ message: 'Plat mis à jour avec succès', plat });
+
+        res.json({ message: 'Plat mis à jour avec succès', plat });
     } catch (error) {
-        res.status(500).send({ error: 'Erreur lors de la mise à jour du plat' });
+        res.status(500).json({ message: 'Erreur lors de la mise à jour du plat', error });
     }
 };
 
 // Supprimer un plat
-const deletePlat = async (req, res) => {
+exports.deletePlat = async (req, res) => {
+    const { platId } = req.params;
+
     try {
-        const plat = await Plat.findByPk(req.params.id);
+        const plat = await Plat.findByPk(platId);
         if (!plat) {
-            return res.status(404).send({ message: 'Plat non trouvé' });
+            return res.status(404).json({ message: 'Plat non trouvé' });
         }
 
         await plat.destroy();
-        res.status(200).send({ message: 'Plat supprimé avec succès' });
+
+        res.json({ message: 'Plat supprimé avec succès' });
     } catch (error) {
-        res.status(500).send({ error: 'Erreur lors de la suppression du plat' });
+        res.status(500).json({ message: 'Erreur lors de la suppression du plat', error });
     }
 };
-module.exports = { createPlat, getPlats, getPlatById, updatePlat, deletePlat };

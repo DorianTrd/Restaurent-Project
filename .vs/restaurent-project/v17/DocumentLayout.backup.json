@@ -3,92 +3,204 @@
   "WorkspaceRootPath": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\utilisateurController.js||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\controllers\\utilisateurController.js||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\RestaurateurDashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\pages\\RestaurateurDashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Utilisateur.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\models\\Utilisateur.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\AdminLayoutDashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\pages\\AdminLayoutDashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\AdminDashboard.js||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\pages\\AdminDashboard.js||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\api\\ApiService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\api\\ApiService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\features\\auth\\authActions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\store\\features\\auth\\authActions.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\AddRestaurant.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\pages\\AddRestaurant.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\pages\\Login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\pages\\Dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\routes\\routes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\routes\\routes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\commandeController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\controllers\\commandeController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\platController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\controllers\\platController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\utilisateurController.js||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\controllers\\utilisateurController.js||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\restaurantController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\controllers\\restaurantController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\validateMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\middleware\\validateMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\platController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\controllers\\platController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\roleMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\middleware\\roleMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\commandeController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\controllers\\commandeController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\authMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\middleware\\authMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateOrder.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\validators\\validateOrder.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Plat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\models\\Plat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Panier.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\models\\Panier.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Utilisateur.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\models\\Utilisateur.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Restaurant.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\models\\Restaurant.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Plat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\models\\Plat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\CommandeDetail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\models\\CommandeDetail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Commande.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\models\\Commande.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\config\\database.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\config\\database.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\upload.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\middleware\\upload.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Orders.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\pages\\Orders.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\authSlice.js||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\store\\authSlice.js||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\authMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\middleware\\authMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\api\\AuthService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\api\\AuthService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\userSlice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\store\\userSlice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\api\\AxiosInstance.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\api\\AxiosInstance.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\pages\\Register.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\authController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\controllers\\authController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateUpdateUser.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\validators\\validateUpdateUser.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\store\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateRestaurant.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\validators\\validateRestaurant.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\cartSlice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\store\\cartSlice.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validatePlat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\validators\\validatePlat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateInscription.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\validators\\validateInscription.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Profile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\pages\\Profile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateCommande.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\validators\\validateCommande.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Cart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\pages\\Cart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\panierController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\controllers\\panierController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\components\\RestaurantCard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\components\\RestaurantCard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\components\\Cart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\components\\Cart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\context\\CartContext.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\context\\CartContext.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\PlateDetail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\pages\\PlateDetail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\components\\PlateCard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\components\\PlateCard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Restaurant.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\pages\\Restaurant.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\RestaurantDetail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\pages\\RestaurantDetail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\roleMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\middleware\\roleMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\validateMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\middleware\\validateMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client-main\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\config\\database.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:server\\config\\database.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,8 +210,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "authActions.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\features\\auth\\authActions.js",
+              "RelativeDocumentMoniker": "client-main\\src\\store\\features\\auth\\authActions.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\features\\auth\\authActions.js",
+              "RelativeToolTip": "client-main\\src\\store\\features\\auth\\authActions.js",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T15:17:10.816Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminLayoutDashboard.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\AdminLayoutDashboard.js",
+              "RelativeDocumentMoniker": "client-main\\src\\pages\\AdminLayoutDashboard.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\AdminLayoutDashboard.js",
+              "RelativeToolTip": "client-main\\src\\pages\\AdminLayoutDashboard.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-29T12:56:41.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\App.js",
+              "RelativeDocumentMoniker": "client-main\\src\\App.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\App.js",
+              "RelativeToolTip": "client-main\\src\\App.js",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAAGwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:37:31.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RestaurateurDashboard.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\RestaurateurDashboard.js",
+              "RelativeDocumentMoniker": "client-main\\src\\pages\\RestaurateurDashboard.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\RestaurateurDashboard.js",
+              "RelativeToolTip": "client-main\\src\\pages\\RestaurateurDashboard.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-29T12:49:36.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminDashboard.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\AdminDashboard.js",
+              "RelativeDocumentMoniker": "client-main\\src\\pages\\AdminDashboard.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\AdminDashboard.js",
+              "RelativeToolTip": "client-main\\src\\pages\\AdminDashboard.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T13:26:42.688Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -118,189 +296,579 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
+              "Title": "AddRestaurant.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\AddRestaurant.js",
+              "RelativeDocumentMoniker": "client-main\\src\\pages\\AddRestaurant.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\AddRestaurant.js",
+              "RelativeToolTip": "client-main\\src\\pages\\AddRestaurant.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-29T12:38:24.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiService.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\api\\ApiService.js",
+              "RelativeDocumentMoniker": "client-main\\src\\api\\ApiService.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\api\\ApiService.js",
+              "RelativeToolTip": "client-main\\src\\api\\ApiService.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:34:08.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "routes.js",
               "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\routes\\routes.js",
               "RelativeDocumentMoniker": "server\\routes\\routes.js",
               "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\routes\\routes.js",
               "RelativeToolTip": "server\\routes\\routes.js",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAiwCYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-11-25T15:21:34.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Utilisateur.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Utilisateur.js",
-              "RelativeDocumentMoniker": "server\\models\\Utilisateur.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Utilisateur.js",
-              "RelativeToolTip": "server\\models\\Utilisateur.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Dashboard.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Dashboard.js",
+              "RelativeDocumentMoniker": "client-main\\src\\pages\\Dashboard.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Dashboard.js",
+              "RelativeToolTip": "client-main\\src\\pages\\Dashboard.js",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:36:56.677Z",
+              "WhenOpened": "2024-11-27T12:35:22.184Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "Login.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Login.js",
+              "RelativeDocumentMoniker": "client-main\\src\\pages\\Login.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Login.js",
+              "RelativeToolTip": "client-main\\src\\pages\\Login.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:35:10.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "utilisateurController.js",
               "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\utilisateurController.js",
               "RelativeDocumentMoniker": "server\\controllers\\utilisateurController.js",
               "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\utilisateurController.js",
               "RelativeToolTip": "server\\controllers\\utilisateurController.js",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAiwE4AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAEwDcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-11-25T14:17:53.733Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "server.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\server.js",
-              "RelativeDocumentMoniker": "server\\server.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\server.js",
-              "RelativeToolTip": "server\\server.js",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAiwB0AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:33:46.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "commandeController.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\commandeController.js",
-              "RelativeDocumentMoniker": "server\\controllers\\commandeController.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\commandeController.js",
-              "RelativeToolTip": "server\\controllers\\commandeController.js",
-              "ViewState": "AgIAACsAAAAAAAAAAAAowD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:35:40.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "platController.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\platController.js",
-              "RelativeDocumentMoniker": "server\\controllers\\platController.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\platController.js",
-              "RelativeToolTip": "server\\controllers\\platController.js",
-              "ViewState": "AgIAACYAAAAAAAAAAAAowD0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:35:23.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "restaurantController.js",
               "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\restaurantController.js",
               "RelativeDocumentMoniker": "server\\controllers\\restaurantController.js",
               "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\restaurantController.js",
               "RelativeToolTip": "server\\controllers\\restaurantController.js",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowDoAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAIwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-11-25T13:35:02.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "validateMiddleware.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\validateMiddleware.js",
-              "RelativeDocumentMoniker": "server\\middleware\\validateMiddleware.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\validateMiddleware.js",
-              "RelativeToolTip": "server\\middleware\\validateMiddleware.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T14:48:15.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "roleMiddleware.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\roleMiddleware.js",
-              "RelativeDocumentMoniker": "server\\middleware\\roleMiddleware.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\roleMiddleware.js",
-              "RelativeToolTip": "server\\middleware\\roleMiddleware.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:38:48.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "authMiddleware.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\authMiddleware.js",
-              "RelativeDocumentMoniker": "server\\middleware\\authMiddleware.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\authMiddleware.js",
-              "RelativeToolTip": "server\\middleware\\authMiddleware.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:38:25.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Plat.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Plat.js",
-              "RelativeDocumentMoniker": "server\\models\\Plat.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Plat.js",
-              "RelativeToolTip": "server\\models\\Plat.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:37:16.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Panier.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Panier.js",
-              "RelativeDocumentMoniker": "server\\models\\Panier.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Panier.js",
-              "RelativeToolTip": "server\\models\\Panier.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:37:37.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "platController.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\platController.js",
+              "RelativeDocumentMoniker": "server\\controllers\\platController.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\platController.js",
+              "RelativeToolTip": "server\\controllers\\platController.js",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAUwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-25T13:35:23.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "commandeController.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\commandeController.js",
+              "RelativeDocumentMoniker": "server\\controllers\\commandeController.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\commandeController.js",
+              "RelativeToolTip": "server\\controllers\\commandeController.js",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAUwHUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-25T13:35:40.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "validateOrder.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateOrder.js",
+              "RelativeDocumentMoniker": "server\\validators\\validateOrder.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateOrder.js",
+              "RelativeToolTip": "server\\validators\\validateOrder.js",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAuwBwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-29T11:41:24.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Utilisateur.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Utilisateur.js",
+              "RelativeDocumentMoniker": "server\\models\\Utilisateur.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Utilisateur.js",
+              "RelativeToolTip": "server\\models\\Utilisateur.js",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-25T13:36:56.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Restaurant.js",
               "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Restaurant.js",
               "RelativeDocumentMoniker": "server\\models\\Restaurant.js",
               "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Restaurant.js",
               "RelativeToolTip": "server\\models\\Restaurant.js",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-11-25T13:37:05.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
+              "Title": "Plat.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Plat.js",
+              "RelativeDocumentMoniker": "server\\models\\Plat.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Plat.js",
+              "RelativeToolTip": "server\\models\\Plat.js",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-25T13:37:16.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CommandeDetail.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\CommandeDetail.js",
+              "RelativeDocumentMoniker": "server\\models\\CommandeDetail.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\CommandeDetail.js",
+              "RelativeToolTip": "server\\models\\CommandeDetail.js",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-29T07:01:39.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Commande.js",
               "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Commande.js",
               "RelativeDocumentMoniker": "server\\models\\Commande.js",
               "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\models\\Commande.js",
               "RelativeToolTip": "server\\models\\Commande.js",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvyAAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAwwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-11-25T13:37:30.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
+              "Title": "upload.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\upload.js",
+              "RelativeDocumentMoniker": "server\\middleware\\upload.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\upload.js",
+              "RelativeToolTip": "server\\middleware\\upload.js",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-29T07:04:20.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "authSlice.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\authSlice.js",
+              "RelativeDocumentMoniker": "client-main\\src\\store\\authSlice.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\authSlice.js",
+              "RelativeToolTip": "client-main\\src\\store\\authSlice.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T15:15:03.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Orders.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Orders.js",
+              "RelativeDocumentMoniker": "client-main\\src\\pages\\Orders.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Orders.js",
+              "RelativeToolTip": "client-main\\src\\pages\\Orders.js",
+              "ViewState": "AgIAABIAAAAAAAAAAAAkwCAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:35:36.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\index.js",
+              "RelativeDocumentMoniker": "client-main\\src\\index.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\index.js",
+              "RelativeToolTip": "client-main\\src\\index.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:37:10.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "authMiddleware.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\authMiddleware.js",
+              "RelativeDocumentMoniker": "server\\middleware\\authMiddleware.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\authMiddleware.js",
+              "RelativeToolTip": "server\\middleware\\authMiddleware.js",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-25T13:38:25.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AuthService.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\api\\AuthService.js",
+              "RelativeDocumentMoniker": "client-main\\src\\api\\AuthService.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\api\\AuthService.js",
+              "RelativeToolTip": "client-main\\src\\api\\AuthService.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:33:59.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "userSlice.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\userSlice.js",
+              "RelativeDocumentMoniker": "client-main\\src\\store\\userSlice.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\userSlice.js",
+              "RelativeToolTip": "client-main\\src\\store\\userSlice.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:36:49.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AxiosInstance.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\api\\AxiosInstance.js",
+              "RelativeDocumentMoniker": "client-main\\src\\api\\AxiosInstance.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\api\\AxiosInstance.js",
+              "RelativeToolTip": "client-main\\src\\api\\AxiosInstance.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:34:16.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Register.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Register.js",
+              "RelativeDocumentMoniker": "client-main\\src\\pages\\Register.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Register.js",
+              "RelativeToolTip": "client-main\\src\\pages\\Register.js",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:35:15.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "authController.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\authController.js",
+              "RelativeDocumentMoniker": "server\\controllers\\authController.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\authController.js",
+              "RelativeToolTip": "server\\controllers\\authController.js",
+              "ViewState": "AgIAADgAAAAAAAAAAAAUwDsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T14:49:38.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\index.js",
+              "RelativeDocumentMoniker": "client-main\\src\\store\\index.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\index.js",
+              "RelativeToolTip": "client-main\\src\\store\\index.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T15:15:42.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "cartSlice.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\cartSlice.js",
+              "RelativeDocumentMoniker": "client-main\\src\\store\\cartSlice.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\store\\cartSlice.js",
+              "RelativeToolTip": "client-main\\src\\store\\cartSlice.js",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:36:55.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "server.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\server.js",
+              "RelativeDocumentMoniker": "server\\server.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\server.js",
+              "RelativeToolTip": "server\\server.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-25T13:33:46.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Profile.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Profile.js",
+              "RelativeDocumentMoniker": "client-main\\src\\pages\\Profile.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Profile.js",
+              "RelativeToolTip": "client-main\\src\\pages\\Profile.js",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAUwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:35:45.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Cart.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Cart.js",
+              "RelativeDocumentMoniker": "client-main\\src\\pages\\Cart.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Cart.js",
+              "RelativeToolTip": "client-main\\src\\pages\\Cart.js",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAUwBsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:35:27.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "RestaurantCard.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\components\\RestaurantCard.js",
+              "RelativeDocumentMoniker": "client-main\\src\\components\\RestaurantCard.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\components\\RestaurantCard.js",
+              "RelativeToolTip": "client-main\\src\\components\\RestaurantCard.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:34:35.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Cart.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\components\\Cart.js",
+              "RelativeDocumentMoniker": "client-main\\src\\components\\Cart.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\components\\Cart.js",
+              "RelativeToolTip": "client-main\\src\\components\\Cart.js",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-28T12:26:38.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CartContext.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\context\\CartContext.js",
+              "RelativeDocumentMoniker": "client-main\\src\\context\\CartContext.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\context\\CartContext.js",
+              "RelativeToolTip": "client-main\\src\\context\\CartContext.js",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:42:17.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "PlateDetail.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\PlateDetail.js",
+              "RelativeDocumentMoniker": "client-main\\src\\pages\\PlateDetail.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\PlateDetail.js",
+              "RelativeToolTip": "client-main\\src\\pages\\PlateDetail.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:36:14.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "PlateCard.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\components\\PlateCard.js",
+              "RelativeDocumentMoniker": "client-main\\src\\components\\PlateCard.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\components\\PlateCard.js",
+              "RelativeToolTip": "client-main\\src\\components\\PlateCard.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:34:56.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Restaurant.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Restaurant.js",
+              "RelativeDocumentMoniker": "client-main\\src\\pages\\Restaurant.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\Restaurant.js",
+              "RelativeToolTip": "client-main\\src\\pages\\Restaurant.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-28T12:08:28.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RestaurantDetail.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\RestaurantDetail.js",
+              "RelativeDocumentMoniker": "client-main\\src\\pages\\RestaurantDetail.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\pages\\RestaurantDetail.js",
+              "RelativeToolTip": "client-main\\src\\pages\\RestaurantDetail.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-27T12:35:58.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\style.css",
+              "RelativeDocumentMoniker": "client-main\\src\\style.css",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\style.css",
+              "RelativeToolTip": "client-main\\src\\style.css",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAkwKAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-27T13:09:20.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\public\\index.html",
+              "RelativeDocumentMoniker": "client-main\\public\\index.html",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\public\\index.html",
+              "RelativeToolTip": "client-main\\public\\index.html",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAkwCoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-28T11:52:26.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\index.css",
+              "RelativeDocumentMoniker": "client-main\\src\\index.css",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\index.css",
+              "RelativeToolTip": "client-main\\src\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-27T13:15:39.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\App.css",
+              "RelativeDocumentMoniker": "client-main\\src\\App.css",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\src\\App.css",
+              "RelativeToolTip": "client-main\\src\\App.css",
+              "ViewState": "AgIAABoAAAAAAAAAAAAcwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-27T12:40:34.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "validateMiddleware.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\validateMiddleware.js",
+              "RelativeDocumentMoniker": "server\\middleware\\validateMiddleware.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\validateMiddleware.js",
+              "RelativeToolTip": "server\\middleware\\validateMiddleware.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-25T14:48:15.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "roleMiddleware.js",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\roleMiddleware.js",
+              "RelativeDocumentMoniker": "server\\middleware\\roleMiddleware.js",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\middleware\\roleMiddleware.js",
+              "RelativeToolTip": "server\\middleware\\roleMiddleware.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-25T13:38:48.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\.gitignore",
+              "RelativeDocumentMoniker": "client-main\\.gitignore",
+              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\client-main\\.gitignore",
+              "RelativeToolTip": "client-main\\.gitignore",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwBgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-27T07:20:25.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
               "Title": "database.js",
               "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\config\\database.js",
               "RelativeDocumentMoniker": "server\\config\\database.js",
@@ -309,97 +877,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-11-25T13:30:22.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "authController.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\authController.js",
-              "RelativeDocumentMoniker": "server\\controllers\\authController.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\authController.js",
-              "RelativeToolTip": "server\\controllers\\authController.js",
-              "ViewState": "AgIAADMAAAAAAAAAAAAuwD0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:34:42.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "validateRestaurant.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateRestaurant.js",
-              "RelativeDocumentMoniker": "server\\validators\\validateRestaurant.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateRestaurant.js",
-              "RelativeToolTip": "server\\validators\\validateRestaurant.js",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBQAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:41:11.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "validateUpdateUser.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateUpdateUser.js",
-              "RelativeDocumentMoniker": "server\\validators\\validateUpdateUser.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateUpdateUser.js",
-              "RelativeToolTip": "server\\validators\\validateUpdateUser.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:42:13.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "validatePlat.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validatePlat.js",
-              "RelativeDocumentMoniker": "server\\validators\\validatePlat.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validatePlat.js",
-              "RelativeToolTip": "server\\validators\\validatePlat.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:41:20.708Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "validateInscription.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateInscription.js",
-              "RelativeDocumentMoniker": "server\\validators\\validateInscription.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateInscription.js",
-              "RelativeToolTip": "server\\validators\\validateInscription.js",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAqwBEAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:41:05.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "validateCommande.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateCommande.js",
-              "RelativeDocumentMoniker": "server\\validators\\validateCommande.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\validators\\validateCommande.js",
-              "RelativeToolTip": "server\\validators\\validateCommande.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:42:26.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "panierController.js",
-              "DocumentMoniker": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\panierController.js",
-              "RelativeDocumentMoniker": "server\\controllers\\panierController.js",
-              "ToolTip": "C:\\Users\\doria\\source\\repos\\M.Calori\\restaurent-project\\server\\controllers\\panierController.js",
-              "RelativeToolTip": "server\\controllers\\panierController.js",
-              "ViewState": "AgIAABIAAAAAAAAAAAAqwCAAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-25T13:35:58.055Z",
               "EditorCaption": ""
             }
           ]

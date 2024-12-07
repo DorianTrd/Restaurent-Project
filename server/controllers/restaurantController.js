@@ -1,50 +1,63 @@
 const Restaurant = require('../models/Restaurant');
 
 // Créer un restaurant
-const createRestaurant = async (req, res) => {
-    try {
-        const { nom, adresse, codePostal, ville, email } = req.body;
+exports.createRestaurant = async (req, res) => {
+    const { utilisateurId, nom, adresse, codePostal, ville, email } = req.body;
 
-        const restaurant = await Restaurant.create({ nom, adresse, codePostal, ville, email });
-        res.status(201).send({ message: 'Restaurant créé avec succès', restaurant });
+    try {
+        const newRestaurant = await Restaurant.create({
+            utilisateurId,
+            nom,
+            adresse,
+            codePostal,
+            ville,
+            email,
+        });
+
+        res.status(201).json({ message: 'Restaurant créé avec succès', restaurant: newRestaurant });
     } catch (error) {
-        res.status(500).send({ error: 'Erreur lors de la création du restaurant' });
+        res.status(500).json({ message: 'Erreur lors de la création du restaurant', error });
     }
 };
 
 // Récupérer tous les restaurants
-const getRestaurants = async (req, res) => {
+exports.getAllRestaurants = async (req, res) => {
     try {
         const restaurants = await Restaurant.findAll();
-        res.status(200).send(restaurants);
+        res.json(restaurants);
     } catch (error) {
-        res.status(500).send({ error: 'Erreur lors de la récupération des restaurants' });
+        res.status(500).json({ message: 'Erreur lors de la récupération des restaurants', error });
     }
 };
 
 // Récupérer un restaurant par ID
-const getRestaurantById = async (req, res) => {
+exports.getRestaurantById = async (req, res) => {
+    const { id } = req.params;
+
     try {
-        const restaurant = await Restaurant.findByPk(req.params.id);
+        const restaurant = await Restaurant.findByPk(id);
         if (!restaurant) {
-            return res.status(404).send({ message: 'Restaurant non trouvé' });
+            return res.status(404).json({ message: 'Restaurant non trouvé' });
         }
-        res.status(200).send(restaurant);
+
+        res.json(restaurant);
     } catch (error) {
-        res.status(500).send({ error: 'Erreur lors de la récupération du restaurant' });
+        res.status(500).json({ message: 'Erreur lors de la récupération du restaurant', error });
     }
 };
 
-// Mettre à jour un restaurant
-const updateRestaurant = async (req, res) => {
-    try {
-        const { nom, adresse, codePostal, ville, email } = req.body;
-        const restaurant = await Restaurant.findByPk(req.params.id);
+// Modifier un restaurant
+exports.updateRestaurant = async (req, res) => {
+    const { id } = req.params;
+    const { nom, adresse, codePostal, ville, email } = req.body;
 
+    try {
+        const restaurant = await Restaurant.findByPk(id);
         if (!restaurant) {
-            return res.status(404).send({ message: 'Restaurant non trouvé' });
+            return res.status(404).json({ message: 'Restaurant non trouvé' });
         }
 
+        // Mise à jour des données
         restaurant.nom = nom || restaurant.nom;
         restaurant.adresse = adresse || restaurant.adresse;
         restaurant.codePostal = codePostal || restaurant.codePostal;
@@ -52,25 +65,27 @@ const updateRestaurant = async (req, res) => {
         restaurant.email = email || restaurant.email;
 
         await restaurant.save();
-        res.status(200).send({ message: 'Restaurant mis à jour avec succès', restaurant });
+
+        res.json({ message: 'Restaurant mis à jour avec succès', restaurant });
     } catch (error) {
-        res.status(500).send({ error: 'Erreur lors de la mise à jour du restaurant' });
+        res.status(500).json({ message: 'Erreur lors de la mise à jour du restaurant', error });
     }
 };
 
 // Supprimer un restaurant
-const deleteRestaurant = async (req, res) => {
+exports.deleteRestaurant = async (req, res) => {
+    const { id } = req.params;
+
     try {
-        const restaurant = await Restaurant.findByPk(req.params.id);
+        const restaurant = await Restaurant.findByPk(id);
         if (!restaurant) {
-            return res.status(404).send({ message: 'Restaurant non trouvé' });
+            return res.status(404).json({ message: 'Restaurant non trouvé' });
         }
 
         await restaurant.destroy();
-        res.status(200).send({ message: 'Restaurant supprimé avec succès' });
+
+        res.json({ message: 'Restaurant supprimé avec succès' });
     } catch (error) {
-        res.status(500).send({ error: 'Erreur lors de la suppression du restaurant' });
+        res.status(500).json({ message: 'Erreur lors de la suppression du restaurant', error });
     }
 };
-
-module.exports = { createRestaurant, getRestaurants, getRestaurantById, updateRestaurant, deleteRestaurant };

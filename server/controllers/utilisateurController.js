@@ -53,11 +53,7 @@ const getUtilisateurs = async (req, res) => {
 // Récupérer un utilisateur
 const getUtilisateur = async (req, res) => {
     try {
-        const utilisateur = await Utilisateur.findByPk(req.user.id); // Récupérer l'utilisateur par ID (dépend de ton middleware d'authentification)
-        if (!utilisateur) {
-            return res.status(404).send({ message: 'Utilisateur non trouvé' });
-        }
-        return res.status(200).send(utilisateur);
+        return res.status(200).send(req.user);
     } catch (error) {
         console.error('Erreur lors de la récupération de l\'utilisateur:', error);
         return res.status(500).send({ error: 'Erreur lors de la récupération de l\'utilisateur' });

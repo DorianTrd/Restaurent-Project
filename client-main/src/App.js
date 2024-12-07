@@ -5,10 +5,14 @@ import { useSelector, useDispatch } from 'react-redux';  // Import de Redux pour
 import Cart from './components/Cart';  // Import du composant Cart
 import Dashboard from './pages/Dashboard';  // Import de la page Dashboard
 import AdminDashboard from './pages/AdminDashboard';  // Import de la page Dashboard
-import RestaurantDashboard from './pages/RestaurantDashboard';  // Import de la page Dashboard
+
 import LoginPage from './pages/Login';  // Exemple de page de connexion
 import { logout } from './store/authSlice';  // Action de déconnexion
 import { getUser } from './store/features/auth/authActions';
+import * as Restaurant from '../../server/models/Restaurant';
+import Orders from './pages/Orders';
+import ProfilePage from './pages/Profile';
+import * as Plat from '../../server/models/Plat';
 
 const RequireAuth = ({ children }) => {
 
@@ -103,14 +107,17 @@ const App = () => {
 
                     <Route path="/dashboard" element={<RequireAuth>
                         <RequireRole roles={["admin", 'restaurateur']}><AdminDashboard /></RequireRole></RequireAuth>}>
-                        {/*<Route path="restaurants" element={<RequireRole roles={["admin"]}><AppDashboardRestaurants /></RequireRole>} />
-                        <Route path="restaurants/create" element={<RequireRole roles={['admin']}><AppDashboardCreateRestaurant /></RequireRole>} />
-                        <Route path="my-restaurant" element={<RequireRole roles={['restaurateur']}><AppDashboardMyRestaurant /></RequireRole>} />
-                        <Route path="plates" element={<RequireRole roles={['restaurateur']}><AppDashboardPlates /></RequireRole>} />
-                        <Route path="plates/:plate_id/edit" element={<RequireRole roles={['restaurateur']}><AppDashboardEditPlate /></RequireRole>} />
-                        <Route path="plates/create" element={<RequireRole roles={['restaurateur']}><AppDashboardEditPlate /></RequireRole>} />
+                        <Route path="restaurants" element={<RequireRole roles={["admin"]}><Restaurant /></RequireRole>} />
+                        <Route path="restaurants/create" element={<RequireRole roles={['admin']}><Restaurant /></RequireRole>} />
+                        {/* <Route path="my-restaurant" element={<RequireRole roles={['restaurateur']}><MyRestaurant /></RequireRole>} /> */} 
+
+                        {/* Modification des routes de plats */}
+                        <Route path="restaurant/:restaurantId/plates" element={<RequireRole roles={['restaurateur']}><Plat /></RequireRole>} />
+                        <Route path="restaurant/:restaurantId/plates/:dishId/edit" element={<RequireRole roles={['restaurateur']}><AppDashboardEditPlate /></RequireRole>} />
+                        <Route path="restaurant/:restaurantId/plates/create" element={<RequireRole roles={['restaurateur']}><AppDashboardEditPlate /></RequireRole>} />
+
                         <Route path="orders" element={<RequireRole roles={['restaurateur']}><AppDashboardOrders /></RequireRole>} />
-*/}                    </Route>
+                    </Route>
                     <Route
                         path="/app"
                         element={
@@ -122,20 +129,16 @@ const App = () => {
                             </RequireAuth>
                         }
                     >
-                        {/* <Route index element={<Navigate to="/app/restaurants" replace />} />
+                         <Route path="restaurants" element={<Restaurant />} />
+                        <Route path="profile" element={<ProfilePage />} />
+                        <Route path="orders" element={<Orders />} />
 
-                        <Route path="cart" element={<AppDashboardCart />} />
-                        <Route path="restaurants" element={<AppDashboardRestaurants />} />
-                        <Route path="profile" element={<AppDashboardProfile />} />
-                        <Route path="orders" element={<AppDashboardOrders />} />
-                        <Route path="restaurants/:restaurant_id" element={<AppDashboardRestaurantDetail />} />
-                        <Route
-                            path="restaurants/:restaurant_id/plates/:plate_id"
-                            element={<AppDashboardRestaurantPlateDetail />}*/}
-                        />
+                        {/* Modification des routes de restaurant avec gestion des plats */}
+                        <Route path="restaurants/:restaurantId" element={<Restaurant />} />
+                        <Route path="restaurants/:restaurantId/plates/:dishId" element={<PlateDetails />} />
                     </Route>
 
-                    {/* Route pour afficher le panier */}
+                 
 
                     {/* Redirection par défaut vers la page de connexion */}
                     <Route path="/" element={<Navigate to="/login" />} />

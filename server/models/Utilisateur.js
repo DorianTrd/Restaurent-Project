@@ -1,6 +1,5 @@
-// models/Utilisateur.js
 const { Sequelize, DataTypes, Model } = require('sequelize');
-const sequelize = require('../config/database'); // Assurez-vous que le chemin est correct
+const sequelize = require('../config/database'); // Configuration de la base de données
 
 const USER_ROLES = {
     ADMIN: 'admin',
@@ -10,9 +9,10 @@ const USER_ROLES = {
 
 class Utilisateur extends Model {
     toJSON() {
-        const values = { ...this.get() }; // Récupérer toutes les valeurs
-        delete values.motDePasse; // Supprimer le mot de passe
-        return values;
+        return {
+            email: this.email,
+            role: this.role,
+        };
     }
 }
 
@@ -21,7 +21,7 @@ Utilisateur.init(
         role: {
             type: DataTypes.ENUM(Object.values(USER_ROLES)),
             allowNull: false,
-            defaultValue: USER_ROLES.USER, // Valeur par défaut
+            defaultValue: USER_ROLES.USER, // Rôle par défaut
         },
         motDePasse: {
             type: DataTypes.STRING,
@@ -40,10 +40,9 @@ Utilisateur.init(
     {
         sequelize,
         modelName: 'Utilisateur',
-        tableName: 'utilisateurs', // Assurez-vous que le nom de la table est correct
-        timestamps: true, // Activer les timestamps (createdAt, updatedAt)
+        tableName: 'utilisateurs', // Nom de la table dans la base de données
+        timestamps: true, // Inclure createdAt et updatedAt
     }
 );
 
-// Exportez à la fois le modèle Utilisateur et l'objet USER_ROLES
 module.exports = { Utilisateur, USER_ROLES };
