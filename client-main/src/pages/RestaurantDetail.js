@@ -1,37 +1,47 @@
-import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import PlateCard from "../components/PlateCard";
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import ApiService from "../api/ApiService";
 
 const RestaurantDetails = () => {
     const { restaurantId } = useParams();
-    const [restaurant, setRestaurant] = useState(null);
-    const [plates, setPlates] = useState([]);
+    const [plats, setPlats] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        // Charger les donn�es du restaurant et ses plats
-        const fetchData = async () => {
-            const fetchedRestaurant = await ApiService.getRestaurant(restaurantId);
-            const fetchedPlates = await ApiService.getRestaurantsPlates(restaurantId);
-            setRestaurant(fetchedRestaurant);
-            setPlates(fetchedPlates);
-        };
+        if (restaurantId) {
+            const fetchPlats = async () => {
+                try {
+                    console.log("Fetching plats for restaurant:", restaurantId);
+                    const fetchedPlats = await ApiService.getPlatsByRestaurant(restaurantId);
+                    setPlats(fetchedPlats);
+                } catch (err) {
+                    console.error("Erreur lors de la récupération des plats:", err);
+                    setError("Impossible de charger les plats pour ce restaurant.");
+                } finally {
+                    setLoading(false);
+                }
+            };
 
-        fetchData();
+            fetchPlats();
+        }
     }, [restaurantId]);
 
-    if (!restaurant) return <p>Chargement...</p>;
+    if (loading) return <p>Chargement...</p>;
+    if (error) return <p>{error}</p>;
 
     return (
         <div>
-            <h1>{restaurant.name}</h1>
-            <p>{restaurant.description}</p>
-
-            <div className="plates-list">
-                {plates.map((plate) => (
-                    <PlateCard key={plate._id} plate={plate} restaurant={restaurant} />
-                ))}
-            </div>
+            <h1>Plats du restaurant {restaurantId}</h1>
+            {plats.length === 0 ? (
+                <p>Aucun plat disponible.</p>
+            ) : (
+                <ul>
+                    {plats.map((plat) => (
+                        <li key={plat.id}>{plat.nom} - {plat.prix}€</li>
+                    ))}
+                </ul>
+            )}
         </div>
     );
 };

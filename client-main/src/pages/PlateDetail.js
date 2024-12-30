@@ -1,36 +1,40 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useCartStore } from "../store/cartSlice";
+import { useDispatch } from "react-redux"; // Importez useDispatch
+import { addProductToCart } from "../store/cartSlice"; // Importez l'action
 import ApiService from "../api/ApiService";
 
 const PlateDetails = () => {
-    const { restaurantId, plateId } = useParams();
-    const [plate, setPlate] = useState(null);
-    const cartStore = useCartStore(); // Simuler un store si nécessaire
+    const { restaurantId, platId } = useParams();  // Utilise platId pour correspondre à ton backend
+    const [plat, setPlat] = useState(null);  // Utilise plat pour correspondre au modèle
+    const dispatch = useDispatch(); // Initialisez useDispatch
 
     useEffect(() => {
         // Charger les détails du plat
-        const fetchPlate = async () => {
-            const fetchedPlate = await ApiService.getPlate(restaurantId, plateId);
-            setPlate(fetchedPlate);
+        const fetchPlat = async () => {
+            try {
+                const response = await ApiService.getPlatDetails(restaurantId, platId);  // Appel API modifié
+                setPlat(response);  // Utilise response qui est le plat récupéré
+            } catch (error) {
+                console.error('Erreur lors de la récupération du plat:', error);
+            }
         };
 
-        fetchPlate();
-    }, [restaurantId, plateId]);
+        fetchPlat();
+    }, [restaurantId, platId]);
 
-    const addPlateToCart = () => {
-        cartStore.addProductToCart(plate); // Ajout au panier (adapter selon votre logique)
+    const addPlatToCart = () => {
+        dispatch(addProductToCart(plat)); // Ajoutez le plat au panier via Redux
     };
 
-    if (!plate) return <p>Chargement...</p>;
+    if (!plat) return <p>Chargement...</p>;
 
     return (
         <div>
-            <h1>{plate.name}</h1>
-            <img src={plate.image} alt={plate.name} />
-            <p>{plate.description}</p>
-            <p>{plate.price}€</p>
-            <button onClick={addPlateToCart}>Ajouter au panier</button>
+            <h1>{plat.nom}</h1>  {/* Affichage du nom du plat */}
+            <p>{plat.description}</p>  {/* Affichage de la description */}
+            <p>{plat.prix}?</p>  {/* Affichage du prix */}
+            <button onClick={addPlatToCart}>Ajouter au panier</button>  {/* Ajout au panier */}
         </div>
     );
 };

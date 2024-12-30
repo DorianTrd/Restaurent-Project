@@ -4,7 +4,7 @@ const initialState = {
     items: [],  // Tableau pour contenir les produits du panier
 };
 
-const cartSlice = createSlice({
+export const cartSlice = createSlice({
     name: 'cart',
     initialState,
     reducers: {
@@ -13,10 +13,10 @@ const cartSlice = createSlice({
                 (item) => item._id === action.payload._id
             );
             if (existingProduct) {
-                // Si le produit existe déjà, on ajoute une quantité
+                // Si le produit existe d?j?, on ajoute une quantit?
                 existingProduct.quantity += 1;
             } else {
-                // Sinon, on ajoute le produit avec une quantité de 1
+                // Sinon, on ajoute le produit avec une quantit? de 1
                 state.items.push({
                     ...action.payload,
                     quantity: 1,
@@ -35,5 +35,5 @@ const cartSlice = createSlice({
 // Exporte les actions pour les utiliser dans les composants
 export const { addProductToCart, removeProductFromCart, clearCart } = cartSlice.actions;
 
-// Exporte le reducer pour être utilisé dans le store
+// Exporte le reducer pour ?tre utilis? dans le store
 export default cartSlice.reducer;

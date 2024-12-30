@@ -1,19 +1,19 @@
 const sequelize = require('../config/database');
 
-// Importation des modèles
+// Importation des modï¿½les
 const { Utilisateur } = require('./Utilisateur');
 const Restaurant = require('./Restaurant');
 const { Commande, STATUT_COMMANDE } = require('./Commande');
 const CommandeDetail = require('./CommandeDetail');
 const Plat = require('./Plat');
 
-// Définition des relations
+// Dï¿½finition des relations
 const setupAssociations = () => {
     // Relations Utilisateur -> Restaurant
     Utilisateur.hasOne(Restaurant, {
         foreignKey: 'utilisateurId',
         as: 'restaurant',
-        onDelete: 'CASCADE', // Supprime le restaurant si l'utilisateur est supprimé
+        onDelete: 'CASCADE', // Supprime le restaurant si l'utilisateur est supprimï¿½
     });
     Restaurant.belongsTo(Utilisateur, {
         foreignKey: 'utilisateurId',
@@ -24,7 +24,7 @@ const setupAssociations = () => {
     Restaurant.hasMany(Plat, {
         foreignKey: 'restaurantId',
         as: 'plats',
-        onDelete: 'CASCADE', // Supprime les plats si le restaurant est supprimé
+        onDelete: 'CASCADE', // Supprime les plats si le restaurant est supprimï¿½
     });
     Plat.belongsTo(Restaurant, {
         foreignKey: 'restaurantId',
@@ -35,7 +35,7 @@ const setupAssociations = () => {
     Utilisateur.hasMany(Commande, {
         foreignKey: 'utilisateurId',
         as: 'commandes',
-        onDelete: 'CASCADE', // Supprime les commandes si l'utilisateur est supprimé
+        onDelete: 'CASCADE', // Supprime les commandes si l'utilisateur est supprimï¿½
     });
     Commande.belongsTo(Utilisateur, {
         foreignKey: 'utilisateurId',
@@ -46,7 +46,7 @@ const setupAssociations = () => {
     Restaurant.hasMany(Commande, {
         foreignKey: 'restaurantId',
         as: 'commandes',
-        onDelete: 'CASCADE', // Supprime les commandes si le restaurant est supprimé
+        onDelete: 'CASCADE', // Supprime les commandes si le restaurant est supprimï¿½
     });
     Commande.belongsTo(Restaurant, {
         foreignKey: 'restaurantId',
@@ -57,7 +57,7 @@ const setupAssociations = () => {
     Commande.hasMany(CommandeDetail, {
         foreignKey: 'commandeId',
         as: 'details',
-        onDelete: 'CASCADE', // Supprime les détails si la commande est supprimée
+        onDelete: 'CASCADE', // Supprime les dï¿½tails si la commande est supprimï¿½e
     });
     CommandeDetail.belongsTo(Commande, {
         foreignKey: 'commandeId',
@@ -68,7 +68,7 @@ const setupAssociations = () => {
     Plat.hasMany(CommandeDetail, {
         foreignKey: 'platId',
         as: 'details',
-        onDelete: 'CASCADE', // Supprime les détails si le plat est supprimé
+        onDelete: 'CASCADE', // Supprime les dï¿½tails si le plat est supprimï¿½
     });
     CommandeDetail.belongsTo(Plat, {
         foreignKey: 'platId',
@@ -76,7 +76,7 @@ const setupAssociations = () => {
     });
 };
 
-// Exportation des modèles et de la fonction de configuration
+
 module.exports = {
     sequelize,
     setupAssociations,

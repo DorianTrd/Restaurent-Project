@@ -17,7 +17,7 @@ const Commande = sequelize.define('Commande', {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-            model: 'Utilisateurs', // Table Utilisateurs
+            model: 'Utilisateurs',
             key: 'id'
         }
     },
@@ -25,14 +25,14 @@ const Commande = sequelize.define('Commande', {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-            model: 'Restaurants', // Table Restaurants
+            model: 'Restaurants',
             key: 'id'
         }
     },
     statut: {
         type: DataTypes.ENUM(Object.values(STATUT_COMMANDE)),
         allowNull: false,
-        defaultValue: STATUT_COMMANDE.ACTIVE // La commande est active par défaut
+        defaultValue: STATUT_COMMANDE.ACTIVE
     },
     total: {
         type: DataTypes.DECIMAL(10, 2),
@@ -41,7 +41,7 @@ const Commande = sequelize.define('Commande', {
     dateCreation: {
         type: DataTypes.DATE,
         allowNull: false,
-        defaultValue: DataTypes.NOW // Date de création par défaut à la date actuelle
+        defaultValue: DataTypes.NOW
     }
 }, {
     timestamps: true,

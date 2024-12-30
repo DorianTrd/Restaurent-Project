@@ -1,5 +1,5 @@
 const { Sequelize, DataTypes, Model } = require('sequelize');
-const sequelize = require('../config/database'); // Configuration de la base de données
+const sequelize = require('../config/database');
 
 const USER_ROLES = {
     ADMIN: 'admin',
@@ -21,7 +21,7 @@ Utilisateur.init(
         role: {
             type: DataTypes.ENUM(Object.values(USER_ROLES)),
             allowNull: false,
-            defaultValue: USER_ROLES.USER, // Rôle par défaut
+            defaultValue: USER_ROLES.USER, // Rï¿½le par dï¿½faut
         },
         motDePasse: {
             type: DataTypes.STRING,
@@ -40,8 +40,8 @@ Utilisateur.init(
     {
         sequelize,
         modelName: 'Utilisateur',
-        tableName: 'utilisateurs', // Nom de la table dans la base de données
-        timestamps: true, // Inclure createdAt et updatedAt
+        tableName: 'utilisateurs',
+        timestamps: true,
     }
 );
 

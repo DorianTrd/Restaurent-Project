@@ -1,10 +1,10 @@
 const multer = require('multer');
 const path = require('path');
 
-// Configuration du stockage
+
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, 'uploads/'); // Répertoire de stockage des images
+        cb(null, 'uploads/');
     },
     filename: (req, file, cb) => {
         cb(null, `${Date.now()}-${file.originalname}`); // Nom du fichier (timestamp + nom original)
@@ -17,7 +17,7 @@ const fileFilter = (req, file, cb) => {
     if (allowedMimeTypes.includes(file.mimetype)) {
         cb(null, true);
     } else {
-        cb(new Error('Type de fichier non valide. Seules les images JPEG, PNG, et GIF sont autorisées.'), false);
+        cb(new Error('Type de fichier non valide. Seules les images JPEG, PNG, et GIF sont autorisï¿½es.'), false);
     }
 };
 

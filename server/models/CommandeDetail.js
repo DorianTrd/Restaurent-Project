@@ -32,7 +32,7 @@ const CommandeDetail = sequelize.define('CommandeDetail', {
     },
 }, {
     tableName: 'commande_details',
-    timestamps: false, // Pas besoin de champs `createdAt` et `updatedAt`
+    timestamps: false,
 });
 
 module.exports = CommandeDetail;

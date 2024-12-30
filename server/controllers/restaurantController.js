@@ -1,48 +1,77 @@
 const Restaurant = require('../models/Restaurant');
+const {Utilisateur, USER_ROLES} = require("../models/Utilisateur");
+const bcrypt = require('bcryptjs');
 
-// Créer un restaurant
+// Crï¿½er un restaurant
 exports.createRestaurant = async (req, res) => {
-    const { utilisateurId, nom, adresse, codePostal, ville, email } = req.body;
+    const { nom, adresse, codePostal, ville, email, password } = req.body;
+
+    if (!nom || !adresse || !codePostal || !ville || !email || !password) {
+        return res.status(400).json({
+            message: 'Tous les champs sont requis',
+            missingFields: {
+                nom, adresse, codePostal, ville, email, password
+            }
+        });
+    }
 
     try {
+        // Hachage du mot de passe avant de le stocker
+        const hashedPassword = await bcrypt.hash(password, 10);
+
+        const utilisateur = await Utilisateur.create({
+            email,
+            motDePasse: hashedPassword,
+            role: USER_ROLES.RESTAURATEUR,
+            nom: nom,
+        });
+
         const newRestaurant = await Restaurant.create({
-            utilisateurId,
             nom,
             adresse,
             codePostal,
             ville,
             email,
+            utilisateurId: utilisateur.id,
         });
 
-        res.status(201).json({ message: 'Restaurant créé avec succès', restaurant: newRestaurant });
+        res.status(201).json({
+            message: 'Restaurant et utilisateur crÃ©Ã©s avec succÃ¨s',
+            utilisateur,
+            restaurant: newRestaurant,
+        });
     } catch (error) {
-        res.status(500).json({ message: 'Erreur lors de la création du restaurant', error });
+        console.error("Erreur lors de la crÃ©ation du restaurant et de l'utilisateur:", error);
+        res.status(500).json({
+            message: 'Erreur lors de la crÃ©ation du restaurant et de l\'utilisateur',
+            error: error.message,
+        });
     }
 };
 
-// Récupérer tous les restaurants
+// Rï¿½cupï¿½rer tous les restaurants
 exports.getAllRestaurants = async (req, res) => {
     try {
         const restaurants = await Restaurant.findAll();
         res.json(restaurants);
     } catch (error) {
-        res.status(500).json({ message: 'Erreur lors de la récupération des restaurants', error });
+        res.status(500).json({ message: 'Erreur lors de la rï¿½cupï¿½ration des restaurants', error });
     }
 };
 
-// Récupérer un restaurant par ID
+// Rï¿½cupï¿½rer un restaurant par ID
 exports.getRestaurantById = async (req, res) => {
     const { id } = req.params;
 
     try {
         const restaurant = await Restaurant.findByPk(id);
         if (!restaurant) {
-            return res.status(404).json({ message: 'Restaurant non trouvé' });
+            return res.status(404).json({ message: 'Restaurant non trouvï¿½' });
         }
 
         res.json(restaurant);
     } catch (error) {
-        res.status(500).json({ message: 'Erreur lors de la récupération du restaurant', error });
+        res.status(500).json({ message: 'Erreur lors de la rï¿½cupï¿½ration du restaurant', error });
     }
 };
 
@@ -54,10 +83,10 @@ exports.updateRestaurant = async (req, res) => {
     try {
         const restaurant = await Restaurant.findByPk(id);
         if (!restaurant) {
-            return res.status(404).json({ message: 'Restaurant non trouvé' });
+            return res.status(404).json({ message: 'Restaurant non trouvï¿½' });
         }
 
-        // Mise à jour des données
+        // Mise ï¿½ jour des donnï¿½es
         restaurant.nom = nom || restaurant.nom;
         restaurant.adresse = adresse || restaurant.adresse;
         restaurant.codePostal = codePostal || restaurant.codePostal;
@@ -66,9 +95,9 @@ exports.updateRestaurant = async (req, res) => {
 
         await restaurant.save();
 
-        res.json({ message: 'Restaurant mis à jour avec succès', restaurant });
+        res.json({ message: 'Restaurant mis ï¿½ jour avec succï¿½s', restaurant });
     } catch (error) {
-        res.status(500).json({ message: 'Erreur lors de la mise à jour du restaurant', error });
+        res.status(500).json({ message: 'Erreur lors de la mise ï¿½ jour du restaurant', error });
     }
 };
 
@@ -79,12 +108,12 @@ exports.deleteRestaurant = async (req, res) => {
     try {
         const restaurant = await Restaurant.findByPk(id);
         if (!restaurant) {
-            return res.status(404).json({ message: 'Restaurant non trouvé' });
+            return res.status(404).json({ message: 'Restaurant non trouvï¿½' });
         }
 
         await restaurant.destroy();
 
-        res.json({ message: 'Restaurant supprimé avec succès' });
+        res.json({ message: 'Restaurant supprimï¿½ avec succï¿½s' });
     } catch (error) {
         res.status(500).json({ message: 'Erreur lors de la suppression du restaurant', error });
     }

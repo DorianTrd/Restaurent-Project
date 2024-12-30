@@ -1,5 +1,5 @@
 const { Sequelize, DataTypes } = require('sequelize');
-const sequelize = require('../config/database'); // Configuration de la base de données
+const sequelize = require('../config/database');
 
 const Restaurant = sequelize.define(
     'Restaurant',
@@ -33,16 +33,16 @@ const Restaurant = sequelize.define(
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
-                model: 'utilisateurs', // Nom de la table Utilisateur
+                model: 'utilisateurs',
                 key: 'id',
             },
-            onDelete: 'CASCADE', // Supprime le restaurant si l'utilisateur est supprimé
+            onDelete: 'CASCADE', // Supprime le restaurant si l'utilisateur est supprimï¿½
         },
     },
     {
         sequelize,
-        tableName: 'restaurants', // Nom de la table dans la base de données
-        timestamps: true, // Inclure createdAt et updatedAt
+        tableName: 'restaurants',
+        timestamps: true,
     }
 );
 

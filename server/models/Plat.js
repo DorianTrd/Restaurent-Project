@@ -18,18 +18,12 @@ const Plat = sequelize.define('Plat', {
     description: {
         type: DataTypes.STRING,
     },
-    imageUrl: { // Champ pour stocker l'URL de l'image
-        type: DataTypes.STRING,
-        allowNull: true, // Optionnel : les plats peuvent ne pas avoir d'image
-        validate: {
-            isUrl: true // Valide que le contenu est une URL
-        }
-    },
+
     restaurantId: {
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-            model: 'Restaurants', // Table Restaurant
+            model: 'Restaurants',
             key: 'id'
         }
     }

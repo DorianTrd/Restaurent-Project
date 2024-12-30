@@ -1,38 +1,64 @@
 const Plat = require('../models/Plat');
+const {Restaurant, Utilisateur} = require("../models");
 
-// Créer un plat pour un restaurant
+// CrÃ©er un plat pour un restaurant
 exports.createPlat = async (req, res) => {
-    const { restaurantId } = req.params; // ID du restaurant dans l'URL
-    const { nom, prix, description, imageUrl } = req.body;
+    const { restaurantId } = req.params;  // RÃ©cupÃ©rer l'ID du restaurant depuis l'URL
+    const { nom, description, prix } = req.body;
 
     try {
-        const newPlat = await Plat.create({
+        // VÃ©rification si l'utilisateur est un restaurateur et qu'il est bien liÃ© au restaurant
+        const utilisateur = await Utilisateur.findByPk(req.user.id);  // Utilisateur authentifiÃ© via JWT
+        if (!utilisateur || utilisateur.role !== 'restaurateur') {
+            return res.status(403).json({ message: 'RÃ´le insuffisant. Vous devez Ãªtre restaurateur.' });
+        }
+
+        // VÃ©rifier que le restaurant existe et qu'il appartient Ã  l'utilisateur
+        const restaurant = await Restaurant.findByPk(restaurantId);
+        if (!restaurant) {
+            return res.status(404).json({ message: 'Restaurant non trouvÃ©.' });
+        }
+
+        if (restaurant.utilisateurId !== utilisateur.id) {
+            return res.status(403).json({ message: 'Vous n\'avez pas l\'autorisation de gÃ©rer ce restaurant.' });
+        }
+
+        // CrÃ©er le plat
+        const plat = await Plat.create({
             nom,
-            prix,
             description,
-            imageUrl,
-            restaurantId
+            prix,
+            restaurantId  // Associer le plat au restaurant
         });
 
-        res.status(201).json({ message: 'Plat créé avec succès', plat: newPlat });
+        return res.status(201).json(plat);
     } catch (error) {
-        res.status(500).json({ message: 'Erreur lors de la création du plat', error });
+        console.error(error);
+        return res.status(500).json({ message: 'Erreur lors de la crÃ©ation du plat', error: error.message });
     }
 };
 
-// Récupérer tous les plats d'un restaurant
+// RÃ©cupÃ©rer tous les plats d'un restaurant
 exports.getPlatsByRestaurant = async (req, res) => {
     const { restaurantId } = req.params;
 
     try {
+        // VÃ©rifier si le restaurant existe
+        const restaurant = await Plat.sequelize.models.Restaurant.findByPk(restaurantId);
+        if (!restaurant) {
+            return res.status(404).json({ message: 'Restaurant non trouvÃ©' });
+        }
+
+        // RÃ©cupÃ©rer les plats du restaurant
         const plats = await Plat.findAll({ where: { restaurantId } });
         res.json(plats);
     } catch (error) {
-        res.status(500).json({ message: 'Erreur lors de la récupération des plats', error });
+        console.error(error);
+        res.status(500).json({ message: 'Erreur lors de la rÃ©cupÃ©ration des plats', error });
     }
 };
 
-// Récupérer les détails d'un plat par ID pour un restaurant
+// RÃ©cupÃ©rer les dÃ©tails d'un plat par ID pour un restaurant
 exports.getPlatDetails = async (req, res) => {
     const { restaurantId, platId } = req.params;
 
@@ -42,37 +68,38 @@ exports.getPlatDetails = async (req, res) => {
         });
 
         if (!plat) {
-            return res.status(404).json({ message: 'Plat non trouvé' });
+            return res.status(404).json({ message: 'Plat non trouvÃ©' });
         }
 
-        res.json(plat);  // Retourne les détails du plat
+        res.json(plat);  // Retourne les dÃ©tails du plat
     } catch (error) {
-        res.status(500).json({ message: 'Erreur lors de la récupération des détails du plat', error });
+        console.error(error);
+        res.status(500).json({ message: 'Erreur lors de la rÃ©cupÃ©ration des dÃ©tails du plat', error });
     }
 };
 
-// Mettre à jour un plat pour un restaurant
+// Mettre Ã  jour un plat pour un restaurant
 exports.updatePlat = async (req, res) => {
     const { platId } = req.params;
-    const { nom, prix, description, imageUrl } = req.body;
+    const { nom, prix, description } = req.body;
 
     try {
         const plat = await Plat.findByPk(platId);
         if (!plat) {
-            return res.status(404).json({ message: 'Plat non trouvé' });
+            return res.status(404).json({ message: 'Plat non trouvÃ©' });
         }
 
-        // Mise à jour des données
+        // Mise Ã  jour des donnÃ©es
         plat.nom = nom || plat.nom;
         plat.prix = prix || plat.prix;
         plat.description = description || plat.description;
-        plat.imageUrl = imageUrl || plat.imageUrl;
 
         await plat.save();
 
-        res.json({ message: 'Plat mis à jour avec succès', plat });
+        res.json({ message: 'Plat mis Ã  jour avec succÃ¨s', plat });
     } catch (error) {
-        res.status(500).json({ message: 'Erreur lors de la mise à jour du plat', error });
+        console.error(error);
+        res.status(500).json({ message: 'Erreur lors de la mise Ã  jour du plat', error });
     }
 };
 
@@ -83,13 +110,14 @@ exports.deletePlat = async (req, res) => {
     try {
         const plat = await Plat.findByPk(platId);
         if (!plat) {
-            return res.status(404).json({ message: 'Plat non trouvé' });
+            return res.status(404).json({ message: 'Plat non trouvÃ©' });
         }
 
         await plat.destroy();
 
-        res.json({ message: 'Plat supprimé avec succès' });
+        res.json({ message: 'Plat supprimÃ© avec succÃ¨s' });
     } catch (error) {
+        console.error(error);
         res.status(500).json({ message: 'Erreur lors de la suppression du plat', error });
     }
 };
