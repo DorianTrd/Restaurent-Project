@@ -110,9 +110,7 @@ const AdminDashboardPage = () => {
 
             {/* Liste des restaurants */}
             <div>
-                <Link to="/dashboard/restaurants/create">
-                    <button>Ajouter un restaurant</button>
-                </Link>
+
                 <div className="restaurants-list">
                     {restaurants.map((restaurant) => (
                         <div key={restaurant.id} className="restaurant-card">

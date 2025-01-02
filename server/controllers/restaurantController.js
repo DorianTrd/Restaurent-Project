@@ -75,6 +75,30 @@ exports.getRestaurantById = async (req, res) => {
     }
 };
 
+exports.getRestaurantByUserId = async (req, res) => {
+    const { userId } = req.params;
+
+    try {
+        // Requête Sequelize pour récupérer le restaurant associé à un utilisateur
+        const restaurant = await Restaurant.findOne({
+            where: {
+                utilisateurId: userId  // Rechercher par utilisateurId
+            }
+        });
+
+        if (!restaurant) {
+            return res.status(404).json({ message: 'Restaurant non trouvé pour cet utilisateur.' });
+        }
+
+        // Retourner le restaurant trouvé
+        return res.json(restaurant);
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({ message: 'Erreur lors de la récupération du restaurant', error });
+    }
+};
+
+
 // Modifier un restaurant
 exports.updateRestaurant = async (req, res) => {
     const { id } = req.params;

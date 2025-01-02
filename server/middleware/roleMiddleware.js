@@ -1,6 +1,6 @@
 const roleMiddleware = (role) => (req, res, next) => {
     if (req.user.role !== role && req.user.role !== 'admin') {
-        return res.status(403).json({ message: 'Accès refusé. Rôle insuffisant' });
+        return res.status(403).json({ message: 'Accï¿½s refusï¿½. Rï¿½le insuffisant' });
     }
     next();
 };

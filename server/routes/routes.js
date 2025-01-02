@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-// Importation des contrôleurs
+// Importation des contrï¿½leurs
 const utilisateurController = require('../controllers/utilisateurController');
 const platController = require('../controllers/platController');
 const restaurantController = require('../controllers/restaurantController');
@@ -17,7 +17,7 @@ router.post(
     '/register',
     [
         body('email').isEmail().withMessage('Email invalide').normalizeEmail(),
-        body('motDePasse').isLength({ min: 6 }).withMessage('Le mot de passe doit contenir au moins 6 caractères'),
+        body('motDePasse').isLength({ min: 6 }).withMessage('Le mot de passe doit contenir au moins 6 caractï¿½res'),
         body('nom').notEmpty().withMessage('Le nom est obligatoire')
     ],
     validateMiddleware,
@@ -28,7 +28,7 @@ router.post(
     '/login',
     [
         body('email').isEmail().withMessage('Email invalide').normalizeEmail(),
-        body('motDePasse').isLength({ min: 6 }).withMessage('Le mot de passe doit contenir au moins 6 caractères')
+        body('motDePasse').isLength({ min: 6 }).withMessage('Le mot de passe doit contenir au moins 6 caractï¿½res')
     ],
     validateMiddleware,
     authController.login
@@ -40,26 +40,26 @@ router.post(
     authMiddleware,
     roleMiddleware('admin'),
     utilisateurController.createUtilisateur
-);  // Créer un utilisateur
+);  // Crï¿½er un utilisateur
 
 router.get(
     '/users',
     authMiddleware,
     roleMiddleware('admin'),
     utilisateurController.getUtilisateurs
-); // Récupérer tous les utilisateurs
+); // Rï¿½cupï¿½rer tous les utilisateurs
 
 router.get(
     '/user',
     authMiddleware,
     utilisateurController.getUtilisateur
-);  // Récupérer un utilisateur spécifique
+);  // Rï¿½cupï¿½rer un utilisateur spï¿½cifique
 
 router.put(
     '/user',
     authMiddleware,
     utilisateurController.updateUtilisateur
-);  // Mettre à jour un utilisateur
+);  // Mettre ï¿½ jour un utilisateur
 
 router.delete(
     '/user',
@@ -74,26 +74,26 @@ router.post(
     authMiddleware,
     roleMiddleware('admin', 'restaurateur'),
     platController.createPlat
-);  // Créer un plat
+);  // Crï¿½er un plat
 
 router.get(
     '/restaurants/:restaurantId/dishes',
     authMiddleware,
     platController.getPlatsByRestaurant
-);  // Récupérer les plats d'un restaurant
+);  // Rï¿½cupï¿½rer les plats d'un restaurant
 
 router.get(
     '/dish/:id',
     authMiddleware,
     platController.getPlatDetails
-);  // Récupérer un plat par ID
+);  // Rï¿½cupï¿½rer un plat par ID
 
 router.put(
     '/dish/:id',
     authMiddleware,
     roleMiddleware('admin', 'restaurateur'),
     platController.updatePlat
-);  // Mettre à jour un plat
+);  // Mettre ï¿½ jour un plat
 
 router.delete(
     '/dish/:id',
@@ -108,26 +108,34 @@ router.post(
     authMiddleware,
     roleMiddleware('admin'),
     restaurantController.createRestaurant
-);  // Créer un restaurant
+);  // Crï¿½er un restaurant
 
 router.get(
     '/restaurants',
     authMiddleware,
     restaurantController.getAllRestaurants
-);  // Récupérer tous les restaurants
+);  // Rï¿½cupï¿½rer tous les restaurants
 
 router.get(
     '/restaurant/:id',
     authMiddleware,
     restaurantController.getRestaurantById
-);  // Récupérer un restaurant par ID
+);  // Rï¿½cupï¿½rer un restaurant par ID
+
+router.get(
+    '/restaurant/user/:userId',
+    authMiddleware,
+    roleMiddleware('restaurateur','admin'),
+    restaurantController.getRestaurantByUserId
+);
+
 
 router.put(
     '/restaurant/:id',
     authMiddleware,
     roleMiddleware('admin', 'restaurateur'),
     restaurantController.updateRestaurant
-);  // Mettre à jour un restaurant
+);  // Mettre ï¿½ jour un restaurant
 
 router.delete(
     '/restaurant/:id',
@@ -141,25 +149,25 @@ router.post(
     '/orders',
     authMiddleware,
     commandeController.createCommande
-);  // Créer une commande
+);  // Crï¿½er une commande
 
 router.get(
     '/orders',
     authMiddleware,
     commandeController.getCommandesByUser
-);  // Récupérer toutes les commandes d'un utilisateur
+);  // Rï¿½cupï¿½rer toutes les commandes d'un utilisateur
 
 router.get(
     '/order/:id',
     authMiddleware,
     commandeController.getCommandeById
-);  // Récupérer une commande par ID
+);  // Rï¿½cupï¿½rer une commande par ID
 
 router.put(
     '/order/:id',
     authMiddleware,
     commandeController.updateCommandeStatus
-);  // Mettre à jour le statut d'une commande
+);  // Mettre ï¿½ jour le statut d'une commande
 
 router.delete(
     '/order/:id',
